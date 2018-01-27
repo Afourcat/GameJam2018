@@ -193,14 +193,14 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 601885712}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 3
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: 800 x 600
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: 1600 x 900
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 1980 x 1080
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -338,6 +338,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 806483832}
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &21894577
@@ -422,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f86eac81d9ed6438c651c3faa56dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HOST_btn: {fileID: 932969323}
 --- !u!1 &250189439
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: 1980 x 1080
 --- !u!222 &334267740
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1072,6 +1084,7 @@ GameObject:
   - component: {fileID: 638967194}
   - component: {fileID: 638967193}
   - component: {fileID: 638967192}
+  - component: {fileID: 638967196}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1157,6 +1170,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &638967196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638967191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bab4c93bbffe744bda4f8d1752fef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenu: {fileID: 190993046}
+  OptionsMenu: {fileID: 1316333495}
 --- !u!1 &754460609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7, y: -154}
+  m_AnchoredPosition: {x: -0.000012159, y: -159.6}
   m_SizeDelta: {x: 250, y: 31.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754460611
@@ -1236,10 +1262,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1316333497}
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &768245684
@@ -1516,6 +1553,17 @@ MonoBehaviour:
       - m_Target: {fileID: 190993046}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 21894576}
+        m_MethodName: Select
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2165,7 +2213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -33.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316333497
@@ -2179,6 +2227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06bbbf9d5dba7cf4c8841e133c89e0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BACK_btn: {fileID: 806483832}
 --- !u!1 &1364282614
 GameObject:
   m_ObjectHideFlags: 0
