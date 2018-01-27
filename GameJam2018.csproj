@@ -325,7 +325,10 @@
     <Compile Include="Assets\Include\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\EventCanvas.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\OptionsMenu.cs" />
+    <Compile Include="Assets\Scripts\OptionMenu\HighlightFullScreen.cs" />
+    <Compile Include="Assets\Scripts\OptionMenu\HighlightGraphics.cs" />
+    <Compile Include="Assets\Scripts\OptionMenu\HighlightVolume.cs" />
+    <Compile Include="Assets\Scripts\OptionMenu\OptionsMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Include\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
