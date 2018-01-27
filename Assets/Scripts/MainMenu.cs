@@ -20,7 +20,8 @@ public class MainMenu : MonoBehaviour {
 
     public void HostGame()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.UnloadScene("");
+        //SceneManager.LoadScene("GameManager", );
     }
 
     public void JoinGame()
